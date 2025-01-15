@@ -9,19 +9,33 @@ function Footer() {
 
   return (
     <>
-      <div className="flex justify-center bg-indigo-900 text-white">
-        <div className="container flex flex-col items-center py-4">
+      <footer className="flex justify-center text-white ">
+        <div className="container flex flex-row-reverse justify-between items-center py-4 pl-60">
           <p className="text-xl font-bold">
             Blog Pessoal Generation | Copyright: {data}
           </p>
-          <p className="text-lg">Acesse nossas redes sociais</p>
-          <div className="flex gap-2">
-            <LinkedinLogo size={48} weight="bold" />
-            <InstagramLogo size={48} weight="bold" />
-            <FacebookLogo size={48} weight="bold" />
+          <div className="flex flex-col gap-1 items-center ">
+            <p className="text-lg">Acesse nossas redes sociais</p>
+            <ul className="flex gap-2 ">
+              <li>
+                <a href="#" target="_blank">
+                  <LinkedinLogo size={48} weight="bold" />
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <InstagramLogo size={48} weight="bold" />
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <FacebookLogo className="" size={48} weight="bold" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }
