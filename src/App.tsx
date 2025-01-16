@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import PaginaBase from "./pages/paginaBase/PaginaBase";
 import Cadastro from "./pages/cadastro/Cadastro";
-import Login from "./components/login/Login";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
