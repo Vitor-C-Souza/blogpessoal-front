@@ -1,13 +1,21 @@
-import Footer from "./assets/components/footer/Footer";
-import Navbar from "./assets/components/navbar/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
+import PaginaBase from "./pages/paginaBase/PaginaBase";
+import Cadastro from "./pages/cadastro/Cadastro";
+import Login from "./components/login/Login";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PaginaBase />}>
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/home" element={<Home />} />
+            <Route index element={<Login />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
