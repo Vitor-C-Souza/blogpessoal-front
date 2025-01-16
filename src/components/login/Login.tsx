@@ -15,13 +15,9 @@ function Login() {
               name="usuario"
               placeholder=" "
               className="peer"
+              required
             />
-            <label
-              htmlFor="usuario"
-              className="absolute top-1/2 -translate-y-1/2 left-4 text-sm text-gray-500 transition-all duration-200 peer-focus:-top-4 peer-focus:left-4 peer-focus:text-xs peer-focus:text-gray-900"
-            >
-              Usuário
-            </label>
+            <label htmlFor="usuario">Usuário</label>
           </div>
           <div className="flex flex-col w-full relative">
             <input
@@ -30,13 +26,9 @@ function Login() {
               name="senha"
               placeholder=" "
               className="peer"
+              required
             />
-            <label
-              htmlFor="senha"
-              className="absolute top-1/2 -translate-y-1/2 left-4 text-sm text-gray-500 transition-all duration-200 peer-focus:-top-4 peer-focus:left-4 peer-focus:text-xs peer-focus:text-gray-900"
-            >
-              Senha
-            </label>
+            <label htmlFor="senha">Senha</label>
           </div>
           <button
             type="submit"
