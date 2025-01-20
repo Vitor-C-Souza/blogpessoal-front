@@ -11,7 +11,7 @@ li {
 }
 
 button {
-  @apply transition-transform hover:scale-105;
+  @apply transition-transform hover:scale-105 m-0 p-0;
 }
 
 ::-webkit-scrollbar {
@@ -39,7 +39,7 @@ input {
 
 input {
   @apply p-2 w-full px-3 pb-2 text-sm text-gray-900 bg-white border-2 border-gray-300 rounded-full 
-    focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500;
+    focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500;
 }
 
 input:focus {
@@ -51,5 +51,5 @@ label {
 
   @apply peer-placeholder-shown:top-1/2 peer-placeholder-shown:left-4 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:transform peer-placeholder-shown:-translate-y-1/2;
 
-  @apply peer-valid:-top-1 peer-valid:left-4 peer-valid:text-xs peer-valid:text-gray-900 peer-valid:transform peer-valid:-translate-y-2 peer-focus:-top-1 peer-focus:left-4 peer-focus:text-xs peer-focus:text-gray-900 peer-focus:transform peer-focus:-translate-y-2;
+  @apply peer-valid:-top-1 peer-valid:left-4 peer-valid:text-xs peer-valid:transform peer-valid:-translate-y-2 peer-focus:-top-1 peer-focus:left-4 peer-focus:text-xs peer-focus:text-gray-900 peer-focus:transform peer-focus:-translate-y-2;
 }

@@ -27,24 +27,18 @@ function Navbar() {
             Postagens
           </li>
           <li>
-            <a href="temas">
+            <Link to="/temas">
               <i className="bx bx-tag-alt" /> Temas
-            </a>
+            </Link>
           </li>
+
           <li>
-            <Link to="/cadastro">
-              <i className="bx bx-edit-alt" /> Cadastrar
+            <Link to="/cadastrartema">
+              <i className="bx bx-purchase-tag-alt" /> Cadastrar tema
             </Link>
           </li>
           <li>
-            <a href="tema">
-              <i className="bx bx-purchase-tag-alt" /> Tema
-            </a>
-          </li>
-          <li>
-            <a href="perfil">
-              <i className="bx bx-body" /> Perfil
-            </a>
+            <i className="bx bx-body" /> Perfil
           </li>
           <li>
             <Link to="" onClick={logout}>
