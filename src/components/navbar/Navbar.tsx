@@ -23,8 +23,9 @@ function Navbar() {
         </Link>
         <ul className="flex gap-9">
           <li>
-            <i className="bx bx-book-content" />
-            Postagens
+            <Link to="/postagens">
+              <i className="bx bx-book-content" /> Postagens
+            </Link>
           </li>
           <li>
             <Link to="/temas">

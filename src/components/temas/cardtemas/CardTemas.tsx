@@ -17,7 +17,7 @@ function CardTemas({ tema }: CardTemasProps) {
         <li className="w-full hover:no-underline">
           <Link
             to={`/editartema/${tema.id}`}
-            className="flex items-center justify-center bg-purple-400 hover:bg-purple-900"
+            className="flex items-center justify-center bg-purple-400 hover:bg-purple-900 py-2"
           >
             <button className="text-white">Editar</button>
           </Link>
@@ -26,7 +26,7 @@ function CardTemas({ tema }: CardTemasProps) {
           <Link
             to={`/deletartema/${tema.id}`}
             className="text-slate-100 bg-red-400 hover:bg-red-700 w-full 
-          flex items-center justify-center "
+          flex items-center justify-center py-2"
           >
             <button>Deletar</button>
           </Link>

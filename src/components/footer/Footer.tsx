@@ -8,7 +8,7 @@ function Footer() {
   const data = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-row w-full justify-center text-white absolute bottom-0">
+    <footer className="flex flex-row w-full justify-center text-white ">
       <div className="container flex flex-row-reverse justify-between items-center py-4 pl-60">
         <p className="text-xl font-bold">
           Blog Pessoal Vítor Cavalcante Souza | Copyright: {data}
